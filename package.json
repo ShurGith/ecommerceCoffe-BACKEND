@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce",
+  "name": "my-strapi-project",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -16,29 +16,33 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@arshiash80/strapi-plugin-iconhub": "^1.1.1",
-    "@strapi-community/cloudinary-media-library": "^1.0.3",
     "@strapi/plugin-cloud": "5.23.4",
     "@strapi/plugin-users-permissions": "5.23.4",
     "@strapi/strapi": "5.23.4",
+    "@stripe/react-stripe-js": "^4.0.2",
+    "@stripe/stripe-js": "^7.9.0",
+    "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
-    "pg": "8.8.0",
+    "pg": "^8.16.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "strapi-code-editor-custom-field": "^1.1.0",
-    "strapi-import-export": "^0.0.1",
-    "strapi-plugin-auto-slug-manager-a-mi13": "^1.1.0",
-    "stripe": "^18.5.0",
+    "stripe": "^14.20.0",
     "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "c79a5a11-f49c-4343-9d33-c0ce8030c772",
-    "installId": "b51733ec40bd71b242564e60bfd96020ae60b88cee68667bc9268a6f848bcc86"
+    "uuid": "be2b7321-1153-415d-b35c-696544d9648d",
+    "installId": "bf1498cbd3762e1ded9489b2b36e64fe215fe343f273bc289a7e3c33dd390aea"
   }
 }
