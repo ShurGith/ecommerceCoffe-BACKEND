@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stripeId": {
+      "type": "string"
+    },
+    "products": {
+      "type": "json"
+    },
+    "paymentIntentId": {
+      "type": "string"
+    },
+    "statis": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "paid"
+      ]
+    }
+  }
+}
